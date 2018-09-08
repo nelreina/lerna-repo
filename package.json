@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "workspaces": [
+    "services/*"
+  ],
+  "devDependencies": {
+    "lerna": "^2.11.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "husky": "^0.14.3",
+    "prettier": "^1.12.1",
+    "pretty-quick": "^1.6.0"
+  },
+  "scripts": {
+    "precommit": "pretty-quick --staged"
+  }
+}
