@@ -1,0 +1,12 @@
+{
+  "name": "@app/server",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "files": [
+    "src"
+  ],
+  "dependencies": {
+    "@nelreina/node-express": "^3.3.10"
+  }
+}
