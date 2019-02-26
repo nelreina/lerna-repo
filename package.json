@@ -4,22 +4,30 @@
     "services/*"
   ],
   "devDependencies": {
-    "eslint-config-prettier": "^3.1.0",
-    "eslint-plugin-prettier": "^3.0.0",
-    "husky": "^1.1.2",
-    "lerna": "^3.4.3",
-    "prettier": "^1.12.1",
-    "pretty-quick": "^1.6.0"
+    "eslint-config-prettier": "latest",
+    "eslint-plugin-prettier": "latest",
+    "husky": "latest",
+    "lerna": "latest",
+    "nodemon": "latest",
+    "prettier": "latest",
+    "pretty-quick": "latest"
   },
   "scripts": {
-    "precommit": "pretty-quick --staged"
+    "precommit": "pretty-quick --staged",
+    "dev": "nodemon services/bin/index"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "services/models/src",
+      "services/server/src"
+    ]
   },
   "dependencies": {
-    "@nelreina/node-log4js": "^3.2.0",
-    "@nelreina/node-sequelize": "^3.2.10",
-    "@nelreina/node-servicebus": "^3.2.0",
-    "dotenv": "^6.0.0",
-    "lodash": "^4.17.10",
-    "string": "^3.3.3"
+    "@nelreina/node-log4js": "*",
+    "@nelreina/node-sequelize": "*",
+    "@nelreina/node-servicebus": "*",
+    "dotenv": "*",
+    "lodash": "*",
+    "string": "*"
   }
 }
